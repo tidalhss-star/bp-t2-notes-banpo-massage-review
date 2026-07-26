@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트렌드 리포트: 서울 유흥 가격 비교 및 시장 투명성 분석</title>
+    <meta name="description" content="서울 주요 지역의 유흥 업종별 최신 가격 트렌드와 시세 분석 정보를 제공합니다. 정찰제 도입 현황 및 투명한 비용 구조 선택 기준을 제시하는 전문 분석 리포트입니다.">
+    <meta name="keywords" content="유흥 가격 비교, 서울 유흥 시세, 업종별 가격 비교, 셔츠룸 가격, 가라오케 비용, 룸싸롱 시세, 시장 트렌드">
+    <link rel="canonical" href="https://notes.banpo-massage-review.xyz/blog-3.html">
+    
+    <!-- Design System Meta -->
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="유흥 가격 비교 — 서울 주요 지역별 업종별 평균 시세 및 선택 기준 가이드">
+    <meta property="og:description" content="서울 주요 지역의 유흥 업종별 최신 가격 트렌드와 시세 분석 정보를 제공합니다.">
+    <meta property="og:url" content="https://notes.banpo-massage-review.xyz/blog-3.html">
+
+    <style>
+        /* CSS Reset & Variables (Swiss Minimal & Warm Grid) */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg-color: #f9f6f0; /* Warm grid off-white */
+            --text-color: #111111; /* Sharp Swiss high-contrast black */
+            --text-muted: #555555;
+            --accent-color: #9e2a2b; /* Deep terracotta red for Swiss accent */
+            --border-color: #111111; /* Solid thin borders */
+            --grid-line: #e3dec3;
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.5;
+            letter-spacing: -0.02em;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Layout Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header & Navigation */
+        header {
+            border-bottom: 2px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            background-color: rgba(249, 246, 240, 0.95);
+            backdrop-filter: blur(8px);
+            z-index: 100;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 72px;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--text-color);
+            letter-spacing: -0.04em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hamburger Menu (Responsive 768) */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: var(--text-color);
+            margin: 6px 0;
+            transition: 0.3s;
+        }
+
+        /* Swiss Grid Layout */
+        .swiss-grid-hero {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            border-bottom: 1px solid var(--border-color);
+            min-height: 400px;
+        }
+
+        .hero-left {
+            padding: 64px 48px 64px 0;
+            border-right: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .hero-right {
+            padding: 64px 0 64px 48px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .hero-tag {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 24px;
+            display: inline-block;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+            margin-bottom: 32px;
+        }
+
+        .hero-desc {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 540px;
+        }
+
+        /* Section Layout */
+        .section-padding {
+            padding: 80px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-header {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            margin-bottom: 48px;
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+        }
+
+        /* Trend Insights Grid */
+        .insight-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .insight-card {
+            border: 1px solid var(--border-color);
+            padding: 32px;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 320px;
+        }
+
+        .card-num {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent-color);
+            margin-bottom: 24px;
+            line-height: 1;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .card-text {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* Data Matrix Table */
+        .data-matrix {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 24px;
+        }
+
+        .data-matrix th, .data-matrix td {
+            border: 1px solid var(--border-color);
+            padding: 16px 20px;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        .data-matrix th {
+            background-color: var(--text-color);
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        .data-matrix tr:nth-child(even) td {
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+
+        /* Internal Link List (PBN Style Freshness) */
+        .news-feed {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .feed-item {
+            display: grid;
+            grid-template-columns: 120px 1fr auto;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--grid-line);
+        }
+
+        .feed-date {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-muted);
+        }
+
+        .feed-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .feed-title:hover {
+            color: var(--accent-color);
+        }
+
+        .feed-tag {
+            font-size: 0.75rem;
+            background-color: var(--text-color);
+            color: #ffffff;
+            padding: 4px 8px;
+            border-radius: 2px;
+            font-weight: 600;
+        }
+
+        /* FAQ Section */
+        .faq-accordion {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        .faq-item {
+            border: 1px solid var(--border-color);
+            background-color: #ffffff;
+            padding: 24px;
+        }
+
+        .faq-question {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--accent-color);
+        }
+
+        .faq-answer {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--text-color);
+            color: #ffffff;
+            padding: 64px 0;
+            font-size: 0.85rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+
+        .footer-brand {
+            font-size: 1.1rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #cccccc;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333333;
+            padding-top: 32px;
+            display: flex;
+            justify-content: space-between;
+            color: #888888;
+        }
+
+        /* Responsive-768 Hamburger Menu & Layout Adjustments */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* In real implementation, this would toggle with JS */
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .swiss-grid-hero {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-left {
+                padding: 40px 0;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+            }
+
+            .hero-right {
+                padding: 40px 0;
+            }
+
+            .hero-title {
+                font-size: 2.25rem;
+            }
+
+            .section-header {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .insight-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .insight-card {
+                min-height: auto;
+            }
+
+            .feed-item {
+                grid-template-columns: 1fr;
+                gap: 8px;
+                align-items: flex-start;
+            }
+
+            .feed-tag {
+                align-self: flex-start;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="/" class="logo">Market Report</a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="/">홈</a></li>
+                        <li><a href="/guide">가격 가이드</a></li>
+                        <li><a href="/trends">트렌드</a></li>
+                        <li><a href="/faq">자주 묻는 질문</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-label="메뉴 열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!-- Hero Section -->
+        <section class="swiss-grid-hero">
+            <div class="hero-left">
+                <div>
+                    <span class="hero-tag">Market Analysis</span>
+                    <h1 class="hero-title">서울 유흥 시장의<br>투명성 제고와<br>가격 트렌드 분석</h1>
+                </div>
+                <p class="hero-desc">정량적 데이터 분석과 시장 구조 모니터링을 통해 투명하고 신뢰할 수 있는 업종별 평균 가격 및 트렌드 신호를 정밀하게 도출합니다.</p>
+            </div>
+            <div class="hero-right">
+                <span class="hero-tag">Key Focus</span>
+                <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 24px; font-weight: 700;">
+                    최근 서울 유흥 시장은 불투명한 추가 요금(옵션 비용)을 배제하고 전체 비용을 통합 공개하는 '정찰제 확산' 흐름을 보이고 있습니다.
+                </p>
+                <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;">
+                    소비자들의 합리적 선택 기준이 엄격해짐에 따라, 강남 및 주요 거점 지역을 중심으로 시세 표준화 작업이 가속화되고 있습니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 1: Market Trends -->
+        <section class="section-padding">
+            <div class="section-header">
+                <h2 class="section-title">2024 상반기<br>주요 트렌드</h2>
+                <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.6;">
+                    소비 트렌드가 다변화되면서 업종별 가격 산정 기준에도 큰 변화가 포착되었습니다. 불필요한 거품 요소를 걷어내고 정액화된 기준율을 적용하는 추세가 강화되고 있습니다.
+                </p>
+            </div>
+
+            <div class="insight-grid">
+                <!-- Card 1 -->
+                <div class="insight-card">
+                    <div>
+                        <div class="card-num">01</div>
+                        <h3 class="card-title">정밀 정찰제 전환</h3>
+                    </div>
+                    <p class="card-text">
+                        기존의 복잡한 주류 및 서비스 계산법에서 벗어나 시간당 고정 금액을 명시하는 정액 요금제 도입 업소 비율이 전년 대비 급증했습니다.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="insight-card">
+                    <div>
+                        <div class="card-num">02</div>
+                        <h3 class="card-title">지역별 편차 감소</h3>
+                    </div>
+                    <p class="card-text">
+                        강남 권역과 비강남 권역(마포, 신림 등) 간의 가격 격차가 온라인 정보 공개 활성화를 통해 점차 평준화되는 양상을 보입니다.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="insight-card">
+                    <div>
+                        <div class="card-num">03</div>
+                        <h3 class="card-title">플랫폼 중심 정보 비교</h3>
+                    </div>
+                    <p class="card-text">
+                        소비자들은 단순 오프라인 견적보다 검증된 플랫폼의 사전 공시 가격을 최우선 기준으로 채택하여 투명성을 자체 검증하고 있습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Data Matrix (Price Range) -->
+        <section class="section-padding">
+            <div class="section-header">
+                <h2 class="section-title">업종별 평균<br>시세 매트릭스</h2>
+                <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.6;">
+                    서울 주요 상권의 업소 공시 데이터를 바탕으로 도출한 객관적 지표입니다. 실제 이용 시 세부 인원 및 시간대에 따른 미세 조정이 발생할 수 있습니다.
+                </p>
+            </div>
+
+            <div style="overflow-x: auto;">
+                <table class="data-matrix">
+                    <thead>
+                        <tr>
+                            <th>업종 유형</th>
+                            <th>기본 시간 기준</th>
+                            <th>평균 시세 범위</th>
+                            <th>추가 비용 구조</th>
+                            <th>투명성 지수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="font-weight: 700;">셔츠룸</td>
+                            <td>90분 기준</td>
+                            <td>130,000원 ~ 180,000원</td>
+                            <td>음료 및 봉사료 포함 여부 확인 요망</td>
+                            <td style="color: var(--accent-color); font-weight: 700;">우수 (정찰제 정착)</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 700;">가라오케</td>
+                            <td>120분 기준</td>
+                            <td>150,000원 ~ 230,000원</td>
+                            <td>룸비 및 인원별 기본 세팅비 상이</td>
+                            <td style="font-weight: 700;">보통 (옵션 세부 확인 필)</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 700;">퍼블릭 룸싸롱</td>
+                            <td>90분 기준</td>
+                            <td>180,000원 ~ 250,000원</td>
+                            <td>주류 등급 및 세트 구성에 따른 변동</td>
+                            <td style="font-weight: 700;">보통</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 3: Trend & News Feed (Internal Links for Signal) -->
+        <section class="section-padding">
+            <div class="section-header">
+                <h2 class="section-title">최신 분석<br>리포트 목록</h2>
+                <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.6;">
+                    시장 분석 전문가들이 작성한 최신 정보 가이드라인입니다. 각 링크를 통해 상세한 구조와 비교 분석 데이터를 확인하실 수 있습니다.
+                </p>
+            </div>
+
+            <div class="news-feed">
+                <div class="feed-item">
+                    <span class="feed-date">2024.10.15</span>
+                    <a href="/guide" class="feed-title">서울 주요 권역별 유흥 가격 비교 및 합리적 선택 기준 가이드</a>
+                    <span class="feed-tag">가격 가이드</span>
+                </div>
+                <div class="feed-item">
+                    <span class="feed-date">2024.10.12</span>
+                    <a href="/trends" class="feed-title">정찰제 도입 업소 증가가 소비자 권익에 미치는 영향 분석</a>
+                    <span class="feed-tag">시장 분석</span>
+                </div>
+                <div class="feed-item">
+                    <span class="feed-date">2024.10.08</span>
+                    <a href="/faq" class="feed-title">유흥 가격 비교 시 주의해야 할 '추가 옵션' 유형과 대처법</a>
+                    <span class="feed-tag">소비자 팁</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: FAQ -->
+        <section class="section-padding">
+            <div class="section-header">
+                <h2 class="section-title">자주 묻는 질문<br>(FAQ)</h2>
+                <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.6;">
+                    가격 비교 분석 데이터를 활용할 때 소비자들이 가장 자주 질문하는 사항들을 투명하게 정리하였습니다.
+                </p>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <h3 class="faq-question">Q. 제시된 가격 비교 데이터는 신뢰할 수 있습니까?</h3>
+                    <p class="faq-answer">
+                        본 가이드에 게재된 금액 범위는 서울 주요 업소들의 공식 공시 가격 및 정기 시장 모니터링 데이터를 취합하여 산출한 객관적 지표입니다. 불법적이거나 비정상적인 경로의 호객 가격은 철저히 배제되었습니다.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Q. 지역별로 시세 편차가 발생하는 주된 원인은 무엇인가요?</h3>
+                    <p class="faq-answer">
+                        임대료, 인건비 등 고정비 차이가 주원인이며, 제공되는 주류의 등급 및 기본 시간 구성 방식의 차이에 의해서도 편차가 발생합니다. 강남권의 경우 정착된 정찰제 기준이 높아 신뢰도가 높은 반면, 일부 타 지역은 옵션 세부 계산 방식을 사전 확인하는 것이 좋습니다.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Q. 정찰제 업소를 선택할 때 주의할 점은 무엇입니까?</h3>
+                    <p class="faq-answer">
+                        '정찰제' 타이틀을 사용하더라도 입장 전 기본 세트 가격 외에 '봉사료(R/T)', '룸 차지', '기본 안주 추가 비용' 등이 완전히 포함된 총액인지를 명확히 재확인하는 것이 가장 안전합니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">유흥 가격 비교 분석 센터</div>
+                    <p style="color: #888888; line-height: 1.6; max-width: 360px;">
+                        서울 유흥 시장의 투명한 가격 구조 확립과 소비자 권익 보호를 목표로 객관적 시장 데이터를 분석하여 제공하는 정보 전문 플랫폼입니다.
+                    </p>
+                </div>
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 16px;">바로가기</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">홈으로</a></li>
+                        <li><a href="/guide">가격 가이드</a></li>
+                        <li><a href="/trends">시장 트렌드</a></li>
+                        <li><a href="/faq">자주 묻는 질문</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="font-weight: 700; margin-bottom: 16px;">문의 및 고지</h4>
+                    <p style="color: #888888; line-height: 1.6;">
+                        본 사이트에서 제공하는 정보는 시장 평균 수치를 기반으로 작성되었으며, 개별 업소의 실제 거래 가격과는 차이가 있을 수 있습니다.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Market Analysis Center. All rights reserved.</p>
+                <p>Designed with Swiss Minimal Concept</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
