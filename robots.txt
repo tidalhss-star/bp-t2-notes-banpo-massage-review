@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://notes.banpo-massage-review.xyz/sitemap.xml
+Sitemap: https://notes.banpo-massage-review.xyz/sitemap-pages.xml

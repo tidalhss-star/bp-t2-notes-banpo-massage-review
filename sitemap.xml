@@ -1,33 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://notes.banpo-massage-review.xyz/about.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://notes.banpo-massage-review.xyz/blog-1.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://notes.banpo-massage-review.xyz/blog-2.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://notes.banpo-massage-review.xyz/blog-3.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://notes.banpo-massage-review.xyz/</loc>
-    <lastmod>2026-07-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://notes.banpo-massage-review.xyz/about.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://notes.banpo-massage-review.xyz/posts/field_note-001-1vgoe19.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://notes.banpo-massage-review.xyz/blog-1.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://notes.banpo-massage-review.xyz/posts/field_note-004-18p6ipj.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://notes.banpo-massage-review.xyz/blog-2.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://notes.banpo-massage-review.xyz/posts/guide-003-17wjt9r.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://notes.banpo-massage-review.xyz/blog-3.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://notes.banpo-massage-review.xyz/posts/guide-005-76nga3.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://notes.banpo-massage-review.xyz/posts/major_compare-002-1hhy327.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://notes.banpo-massage-review.xyz/posts/major_compare-005-zdn22v.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://notes.banpo-massage-review.xyz/posts/myth-002-n710rz.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://notes.banpo-massage-review.xyz/posts/myth-004-1mqlhhs.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://notes.banpo-massage-review.xyz/posts/qa-001-cb5ffp.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://notes.banpo-massage-review.xyz/posts/qa-003-1hyf7kq.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
