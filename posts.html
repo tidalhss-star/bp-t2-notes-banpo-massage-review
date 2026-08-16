@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 · t2-notes-banpo-massage-review</title>
+  <meta name="description" content="t2-notes-banpo-massage-review에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://notes.banpo-massage-review.xyz/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* CSS Reset & Variables */
+ *, *::before, *::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+ :root {
+ --bg-color: #fbf9f6;
+ --text-color: #1a1a1a;
+ --text-muted: #66605c;
+ --accent-color: #8c2d19;
+ --grid-color: #e8e2da;
+ --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+ --font-mono: "SF Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+ --max-width: 1200px;
+ }
+ body {
+ background-color: var(--bg-color);
+ color: var(--text-color);
+ font-family: var(--font-sans);
+ line-height: 1.6;
+ -webkit-font-smoothing: antialiased;
+ }
+
+ /* Layout Container */
+ .container {
+ max-width: var(--max-width);
+ margin: 0 auto;
+ padding: 0 24px;
+ }
+
+ /* Header Navigation */
+ .header {
+ border-bottom: 1px solid var(--grid-color);
+ position: sticky;
+ top: 0;
+ background-color: rgba(251, 249, 246, 0.9);
+ backdrop-filter: blur(8px);
+ z-index: 1000;
+ }
+ .nav-container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 70px;
+ }
+ .logo {
+ font-size: 1rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ color: var(--text-color);
+ text-decoration: none;
+ }
+ .logo span {
+ color: var(--accent-color);
+ }
+ .nav-menu {
+ display: flex;
+ gap: 32px;
+ list-style: none;
+ }
+ .nav-link {
+ text-decoration: none;
+ color: var(--text-muted);
+ font-size: 0.9rem;
+ font-weight: 500;
+ transition: color 0.2s ease;
+ }
+ .nav-link:hover, .nav-link.active {
+ color: var(--text-color);
+ }
+
+ /* Mobile Hamburger */
+ .hamburger {
+ display: none;
+ background: none;
+ border: none;
+ cursor: pointer;
+ padding: 4px;
+ }
+ .hamburger span {
+ display: block;
+ width: 20px;
+ height: 2px;
+ background-color: var(--text-color);
+ margin: 4px 0;
+ transition: 0.2s;
+ }
+
+ /* Swiss Minimal Grid Hero */
+ .hero-section {
+ padding: 100px 0 60px;
+ border-bottom: 1px solid var(--grid-color);
+ }
+ .hero-grid {
+ display: grid;
+ grid-template-columns: 1.2fr 0.8fr;
+ gap: 48px;
+ align-items: end;
+ }
+ .hero-title {
+ font-size: clamp(2.2rem, 4.5vw, 4rem);
+ font-weight: 800;
+ line-height: 1.1;
+ letter-spacing: -0.03em;
+ word-break: keep-all;
+ }
+ .hero-title span {
+ display: block;
+ color: var(--accent-color);
+ }
+ .hero-desc {
+ font-size: 1.05rem;
+ color: var(--text-muted);
+ padding-bottom: 8px;
+ border-left: 3px solid var(--accent-color);
+ padding-left: 20px;
+ line-height: 1.7;
+ }
+
+ /* Info Section (Two Columns) */
+ .info-section {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ border-bottom: 1px solid var(--grid-color);
+ }
+ .info-col-left {
+ padding: 80px 48px 80px 0;
+ border-right: 1px solid var(--grid-color);
+ }
+ .info-col-right {
+ padding: 80px 0 80px 48px;
+ }
+ .section-tag {
+ font-family: var(--font-mono);
+ font-size: 0.8rem;
+ text-transform: uppercase;
+ letter-spacing: 0.12em;
+ color: var(--accent-color);
+ margin-bottom: 24px;
+ display: block;
+ }
+ .section-heading {
+ font-size: 1.85rem;
+ font-weight: 700;
+ line-height: 1.35;
+ margin-bottom: 32px;
+ letter-spacing: -0.01em;
+ word-break: keep-all;
+ }
+ .paragraph {
+ font-size: 0.98rem;
+ color: var(--text-muted);
+ margin-bottom: 24px;
+ text-align: justify;
+ line-height: 1.75;
+ }
+
+ /* Methodology (Three Columns Grid) */
+ .methodology-section {
+ padding: 80px 0;
+ border-bottom: 1px solid var(--grid-color);
+ }
+ .grid-three {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 40px;
+ margin-top: 48px;
+ }
+ .grid-card {
+ background: transparent;
+ }
+ .card-num {
+ font-family: var(--font-mono);
+ font-size: 1.4rem;
+ font-weight: 400;
+ color: var(--accent-color);
+ border-bottom: 1px solid var(--grid-color);
+ padding-bottom: 16px;
+ margin-bottom: 24px;
+ display: block;
+ }
+ .card-title {
+ font-size: 1.15rem;
+ font-weight: 700;
+ margin-bottom: 16px;
+ letter-spacing: -0.01em;
+ }
+ .card-text {
+ font-size: 0.92rem;
+ color: var(--text-muted);
+ line-height: 1.7;
+ }
+
+ /* FAQ Section */
+ .faq-section {
+ padding: 80px 0;
+ }
+ .faq-container {
+ max-width: 850px;
+ margin: 0 auto;
+ }
+ .faq-item {
+ border-bottom: 1px solid var(--grid-color);
+ padding: 32px 0;
+ }
+ .faq-item:first-child {
+ padding-top: 0;
+ }
+ .faq-question {
+ font-size: 1.15rem;
+ font-weight: 700;
+ margin-bottom: 16px;
+ display: flex;
+ align-items: flex-start;
+ gap: 12px;
+ letter-spacing: -0.01em;
+ }
+ .faq-question::before {
+ content: "Q.";
+ color: var(--accent-color);
+ font-family: var(--font-mono);
+ font-weight: 700;
+ }
+ .faq-answer {
+ font-size: 0.95rem;
+ color: var(--text-muted);
+ padding-left: 28px;
+ line-height: 1.75;
+ }
+
+ /* Footer */
+ .footer {
+ border-top: 1px solid var(--grid-color);
+ padding: 60px 0;
+ background-color: #f5f1eb;
+ }
+ .footer-grid {
+ display: grid;
+ grid-template-columns: 1.5fr 1fr;
+ gap: 48px;
+ }
+ .footer-left {
+ display: flex;
+ flex-direction: column;
+ gap: 16px;
+ }
+ .footer-logo {
+ font-size: 0.95rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ color: var(--text-color);
+ }
+ .footer-text {
+ font-size: 0.85rem;
+ color: var(--text-muted);
+ max-width: 500px;
+ line-height: 1.6;
+ }
+ .footer-right {
+ display: flex;
+ justify-content: flex-end;
+ gap: 60px;
+ }
+ .footer-links {
+ list-style: none;
+ display: flex;
+ flex-direction: column;
+ gap: 12px;
+ }
+ .footer-link {
+ text-decoration: none;
+ color: var(--text-muted);
+ font-size: 0.85rem;
+ transition: color 0.2s ease;
+ }
+ .footer-link:hover {
+ color: var(--text-color);
+ }
+ .copyright {
+ font-family: var(--font-mono);
+ font-size: 0.75rem;
+ color: var(--text-muted);
+ margin-top: 40px;
+ border-top: 1px solid #e1d9ce;
+ padding-top: 24px;
+ }
+
+ /* Responsive Design */
+ @media (max-width: 768px) {
+ .hamburger {
+ display: block;
+ }
+ .nav-menu {
+ display: none;
+ }
+ .hero-grid {
+ grid-template-columns: 1fr;
+ gap: 24px;
+ padding-top: 40px;
+ }
+ .info-section {
+ grid-template-columns: 1fr;
+ }
+ .info-col-left {
+ padding: 48px 0;
+ border-right: none;
+ border-bottom: 1px solid var(--grid-color);
+ }
+ .info-col-right {
+ padding: 48px 0;
+ }
+ .grid-three {
+ grid-template-columns: 1fr;
+ gap: 32px;
+ }
+ .footer-grid {
+ grid-template-columns: 1fr;
+ gap: 32px;
+ }
+ .footer-right {
+ justify-content: flex-start;
+ gap: 40px;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 · t2-notes-banpo-massage-review">
+  <meta property="og:description" content="t2-notes-banpo-massage-review에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://notes.banpo-massage-review.xyz/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+ <div class="container nav-container">
+ <a href="/" class="logo">MARKET <span>REPORT</span></a>
+ <button class="hamburger" aria-label="메뉴 열기">
+ <span></span>
+ <span></span>
+ <span></span>
+ </button>
+ <ul class="nav-menu">
+ <li><a href="/" class="nav-link">홈</a></li>
+ <li><a href="/about" class="nav-link active">소개</a></li>
+ <li><a href="/guide" class="nav-link">가격 비교 가이드</a></li>
+ <li><a href="/analysis" class="nav-link">업종별 분석</a></li>
+ </ul>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 15개</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-001-1vgoe19.html">유흥 가격 비교 현장에서 확인한 선택 기준과 주의점</a>
+        <p class="post-item__summary">서울 지역에서 유흥 가격 비교 정보를 탐색할 때는 단순히 낮은 금액만을 기준으로 삼기보다 세부 항목에 포함된 서비스를 꼼꼼히 살펴보는 과정이 중요합니다. 가격 정보 사이트나 커뮤니티에 게시된 금액이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-004-18p6ipj.html">파이트클럽, 그 0.07초의 농담을 아직도 모른다면 제대로 본 게 아니다</a>
+        <p class="post-item__summary">사람들은 흔히 영화의 숨은 디테일이라고 하면 뭔가 대단한 제작비와 철학이 깔린 연출을 상상하더군요. 제가 오늘 할 얘기는 정반대입니다. 이건 돈이 없어서, 아니 솔직히 말하면 소품팀이 상사 눈치 보</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-005-1oqo310.html">사장놈이 숨기는 룸 원가 계산기, 내가 단골 타이틀 떼고 털어왔다</a>
+        <p class="post-item__summary">얼음통에 담긴 칠성사이다 캔 뒤편에 붙어 있는 유통기한 라벨의 폰트가 강남과 마포에서 서로 미세하게 다른 걸 발견했다. 동일한 30만 원짜리 기본 룸 세팅인데도, 강남 논현동 한복판에서는 임대료와 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-003-17wjt9r.html">강남 하이엔드 씬, 가격표만 보고 덤볐다간 밑바닥까지 털리는 이유</a>
+        <p class="post-item__summary">2015년 8월이었어. 청담동의 한 오피스텔 우편함에서 낡은 USB 하나를 건넸지. 정보 제공자는 스스로를 &quot;보관자&quot;라고만 불렀다. 녀석은 CIA의 MK울트라 청문회를 뒤지던 중 우연히 이걸 발견했</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-004-jrn424.html">홍대서 월 3천 찍고도 야반도주한 이유, 유흥 가격 비교보다 정교해야 할 생존 공식</a>
+        <p class="post-item__summary">2023년 11월, 홍대 와우산로 21길 2층의 12평짜리 이자카야는 월 매출 3,200만 원을 찍고도 보증금을 다 까먹은 채 야반도주했다. 반면 거기서 딱 150미터 떨어진 지하 15평 맥주집은 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-005-76nga3.html">정보 블로그 해결 방법 총정리</a>
+        <p class="post-item__summary">서울과 같은 대도시에서는 수많은 엔터테인먼트 및 유흥 관련 정보가 넘쳐나기 때문에 정확한 가격 비교와 이용 정보를 찾는 것이 매우 중요합니다. 수많은 옵션 중에서 자신에게 맞는 합리적인 선택을 하기</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/major_compare-001-1fskhku.html">권리금 2억의 실체, 유흥 가격 비교만 믿다간 골로 가는 방 장사 원가 구조</a>
+        <p class="post-item__summary">보증금 1억 원에 월세 850만 원, 그리고 바닥 권리금만 2억 원을 받아 챙기고 나간 전 임차인의 2023년도 주류 사입 대장과 소방 완비 증명서를 테이블 위에 던져 놓았다. 장부 구석에 적힌 ‘</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/major_compare-002-1hhy327.html">유흥 가격 비교 vs 유흥 가격 비교 비교</a>
+        <p class="post-item__summary">서울과 같은 대도시에서는 다양한 유흥 관련 정보를 제공하는 플랫폼과 비교 서비스가 점차 늘어나고 있습니다. 소비자가 합리적이고 안전한 선택을 하기 위해서는 정보의 정확성과 최신 반영 여부를 신중하게</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/major_compare-005-zdn22v.html">강남 하이엔드 가라오케, 7부제 인지세 그냥 넘기면 벌어지는 일들</a>
+        <p class="post-item__summary">2007년 12월. 워너브라더스 법무팀이 최종 편집권 계약서의 부속 조항 14.2를 재검토하기 시작한 바로 그 시점에, 리들리 스콧은 런던의 한 편집실에서 1992년산 필름 복원용 모니터를 노려보고</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-002-n710rz.html">리들리 스콧이 입 싹 닦은 그 장면, 돈 얘기다</a>
+        <p class="post-item__summary">IMDB 3점대라는 게 꼭 폐기물만 뜻하는 건 아니야. 오히려 거기서 건져야 진국인 경우도 있거든. 스콧 감독이 2007년에 파이널 컷을 내놨을 때, 대다수 평론가들은 '유니콘 꿈 시퀀스'를 보고 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-003-b8fpr0.html">권리금 2억 받고 탈출한 놈과 들어간 바보의 실거래 내역서, 그리고 유흥 가격 비교의 씁쓸한 현실에 대하여</a>
+        <p class="post-item__summary">내가 2023년 봄에 홍대 서교동 이면도로에서 도장을 찍어줬던 권리금 2억짜리 이자카야 계약서는, 지금 생각해도 내 중개업 인생에서 가장 쓰라린 실패작이었습니다. 권리금이 높을수록 안전하고 매출이 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-004-1mqlhhs.html">유흥 가격 비교에 대한 통념과 실제 차이를 검토했다</a>
+        <p class="post-item__summary">서울 지역에서 유흥 가격 비교 정보를 탐색할 때 많은 이용자가 단순 표기된 금액만을 기준으로 전체 비용을 판단하곤 합니다. 그러나 매장에 따라 제시되는 기본 금액에는 구체적인 서비스 항목이나 시간 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-001-cb5ffp.html">야 너 데이터마이닝으로 털린 보스들, 진짜 실전 굴려봤냐?</a>
+        <p class="post-item__summary">사람들이 흔히 착각하는 게 하나 있다. 게임에서 잘린 컨텐츠는 '미완성'이라서 구리다는 거다. 근데 내가 직접 데이터마이닝 툴로 파일 까보고, 실제 인게임에 소환까지 해본 입장에서 말하는데, 이건 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-002-v4dd1j.html">홍대 노가다꾼의 눈물겨운 유흥 가격 비교와 2023년 망한 사장들의 공통분모</a>
+        <p class="post-item__summary">2023년 10월, 홍대 삼거리포차 뒷골목의 한 이자카야에서 내가 몰래 계산한 소주 한 병당 마진율은 무려 420%였다. 단골이라는 지위를 이용해 사장놈이 담배 피우러 간 사이 주방 구석에 쌓인 식</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-003-1hyf7kq.html">유흥 가격 비교 관련 질문을 상황별로 정리해봤다</a>
+        <p class="post-item__summary">서울 지역에서 유흥 관련 서비스를 이용하기 전 가격을 비교할 때는 단순히 겉으로 보이는 금액만 확인해서는 안 됩니다. 업종이나 서비스 형태에 따라 기본 이용 금액 외에 부부과되는 항목이 다를 수 있</p>
+      </li>
+      </ul>
+
+    </main>
+  </div>
+</body>
+</html>
